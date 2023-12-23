@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./css/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Array to list</title>
-</head>
-<body>
-  <ul id="catalog"></ul>
-  <script src="./js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+      integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array to list</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html">RAZA clo.</a>
+        <button class="cart-btn" type="button">
+          <i class="ri-shopping-cart-2-line"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="filter-container">
+        <button type="button" onclick="FilterTshirts()">T-shirts</button>
+        <button type="button" onclick="FilterJackets()">Jackets</button>
+        <button type="button" onclick="FilterJeans()">Jeans</button>
+        <button type="button" onclick="FilterSkirts()">Skirts</button>
+        <button type="button" onclick="FilterAll()">All</button>
+      </div>
+      <ul id="catalog"></ul>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
