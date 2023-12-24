@@ -1,8 +1,6 @@
 import goods from "./goods.js";
 import scroll from "./scroll-reveal.js";
 
-console.log(goods);
-console.log(typeof goods);
 function shuffle(array) {
   let currentIndex = array.length,
     randomIndex;
