@@ -1,0 +1,25 @@
+.catalog-section {
+  &__filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  &__filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #289ff0;
+  }
+  &__filter-btn:focus,
+  &__filter-btn:active {
+    padding: 0.5rem 1rem;
+    background-color: #289ff0;
+    font-weight: 900;
+    color: #fff;
+  }
+  &__title{
+    text-align: center;
+  }
+}

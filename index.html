@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <!-- Remix icon -->
     <link
       rel="stylesheet"
@@ -15,7 +16,7 @@
     />
 
     <!-- Styles css -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Array to list</title>
   </head>
@@ -29,21 +30,34 @@
           <i class="ri-shopping-cart-2-line"></i>
         </button>
       </div>
-    </header> 
+    </header>
     <!-- #endregion -->
     <main>
       <section class="catalog-section">
+        <h1 class="catalog-section__title">Browse our catalog</h1>
         <div class="catalog-section__filter">
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterTshirts()">T-shirts</button>
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterJackets()">Jackets</button>
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterJeans()">Jeans</button>
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterSkirts()">Skirts</button>
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterAll()">All</button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterTshirts()">
+            T-shirts
+          </button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterJackets()">
+            Jackets
+          </button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterJeans()">
+            Jeans
+          </button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterSkirts()">
+            Skirts
+          </button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterAll()">
+            All
+          </button>
         </div>
         <ul class="catalog" id="catalog"></ul>
       </section>
     </main>
-
+    <footer class="footer">
+      <p class="footer-text">Developed by Alexander Rostyagai</p>
+    </footer>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="./js/main.js"></script>
   </body>

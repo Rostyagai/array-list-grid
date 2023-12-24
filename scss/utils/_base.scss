@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(271deg, #0ef0a2, #a8fbde, #289ff0, #44aaf0, #44eff0);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
+
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+main {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  border: 2px solid black;
+}
+p {
+  margin: 0;
+}
+img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 45%;
+  }
+  50% {
+    background-position: 100% 56%;
+  }
+  100% {
+    background-position: 0% 45%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 45%;
+  }
+  50% {
+    background-position: 100% 56%;
+  }
+  100% {
+    background-position: 0% 45%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 45%;
+  }
+  50% {
+    background-position: 100% 56%;
+  }
+  100% {
+    background-position: 0% 45%;
+  }
+}
