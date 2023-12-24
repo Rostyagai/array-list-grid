@@ -679,14 +679,19 @@ const FilterTshirts = () => {
   tShirts = goods.filter((item) => item.name === "T-shirt");
   let items = "";
   for (item of tShirts) {
-    items += `<li>
+    items += `<li class='catalog__item'>
     <img src="${item.img}">
+    <div class='catalog__container'>
     <p>${item.name}</p>
-    <p>${item.size}</p>
+    <div class='catalog__item-specs'>
+      <p>${item.size}</p>
+      <p>${item.color}</p>
+    </div>
+
     <p>${item.price}</p>
-    <p>${item.color}</p>
+    </div>
     
-    <button class="add-to-cart-btn">Add to cart</button></li>`;
+    <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   catalog.innerHTML = items;
   ScrollReveal().reveal("li");
@@ -696,13 +701,19 @@ const FilterJackets = () => {
   jackets = goods.filter((item) => item.name === "Jacket");
   let items = "";
   for (item of jackets) {
-    items += `<li>
+    items += `<li class='catalog__item'>
     <img src="${item.img}">
+    <div class='catalog__container'>
     <p>${item.name}</p>
-    <p>${item.size}</p>
+    <div class='catalog__item-specs'>
+      <p>${item.size}</p>
+      <p>${item.color}</p>
+    </div>
+
     <p>${item.price}</p>
-    <p>${item.color}</p>
-    <button class="add-to-cart-btn">Add to cart</button></li>`;
+    </div>
+    
+    <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   catalog.innerHTML = items;
   ScrollReveal().reveal("li");
@@ -710,13 +721,19 @@ const FilterJackets = () => {
 const FilterAll = () => {
   let items = "";
   for (item of goods) {
-    items += `<li>
+    items += `<li class='catalog__item'>
     <img src="${item.img}">
+    <div class='catalog__container'>
     <p>${item.name}</p>
-    <p>${item.size}</p>
+    <div class='catalog__item-specs'>
+      <p>${item.size}</p>
+      <p>${item.color}</p>
+    </div>
+
     <p>${item.price}</p>
-    <p>${item.color}</p>
-    <button class="add-to-cart-btn">Add to cart</button></li>`;
+    </div>
+    
+    <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   shuffle(goods);
   catalog.innerHTML = items;
@@ -727,13 +744,19 @@ const FilterJeans = () => {
   jeans = goods.filter((item) => item.name === "Jeans");
   let items = "";
   for (item of jeans) {
-    items += `<li>
+    items += `<li class='catalog__item'>
     <img src="${item.img}">
+    <div class='catalog__container'>
     <p>${item.name}</p>
-    <p>${item.size}</p>
+    <div class='catalog__item-specs'>
+      <p>${item.size}</p>
+      <p>${item.color}</p>
+    </div>
+
     <p>${item.price}</p>
-    <p>${item.color}</p>
-    <button class="add-to-cart-btn">Add to cart</button></li>`;
+    </div>
+    
+    <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   catalog.innerHTML = items;
   ScrollReveal().reveal("li");
@@ -743,13 +766,19 @@ const FilterSkirts = () => {
   skirts = goods.filter((item) => item.name === "Skirt");
   let items = "";
   for (item of skirts) {
-    items += `<li>
+    items += `<li class='catalog__item'>
     <img src="${item.img}">
+    <div class='catalog__container'>
     <p>${item.name}</p>
-    <p>${item.size}</p>
+    <div class='catalog__item-specs'>
+      <p>${item.size}</p>
+      <p>${item.color}</p>
+    </div>
+
     <p>${item.price}</p>
-    <p>${item.color}</p>
-    <button class="add-to-cart-btn">Add to cart</button></li>`;
+    </div>
+    
+    <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   catalog.innerHTML = items;
   ScrollReveal().reveal("li");

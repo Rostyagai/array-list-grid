@@ -1,7 +1,11 @@
+<!-- #region head -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remix icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
@@ -9,28 +13,35 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Styles css -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Array to list</title>
   </head>
+  <!-- #endregion -->
+  <!-- #region header -->
   <body>
-    <header>
-      <div class="header-container">
-        <a href="index.html">RAZA clo.</a>
-        <button class="cart-btn" type="button">
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="index.html">RAZA clo.</a>
+        <button class="header__cart-btn" type="button">
           <i class="ri-shopping-cart-2-line"></i>
         </button>
       </div>
-    </header>
+    </header> 
+    <!-- #endregion -->
     <main>
-      <div class="filter-container">
-        <button type="button" onclick="FilterTshirts()">T-shirts</button>
-        <button type="button" onclick="FilterJackets()">Jackets</button>
-        <button type="button" onclick="FilterJeans()">Jeans</button>
-        <button type="button" onclick="FilterSkirts()">Skirts</button>
-        <button type="button" onclick="FilterAll()">All</button>
-      </div>
-      <ul id="catalog"></ul>
+      <section class="catalog-section">
+        <div class="catalog-section__filter">
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterTshirts()">T-shirts</button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterJackets()">Jackets</button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterJeans()">Jeans</button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterSkirts()">Skirts</button>
+          <button class="catalog-section__filter-btn" type="button" onclick="FilterAll()">All</button>
+        </div>
+        <ul class="catalog" id="catalog"></ul>
+      </section>
     </main>
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
