@@ -36,21 +36,13 @@
       <section class="catalog-section">
         <h1 class="catalog-section__title">Browse our catalog</h1>
         <div class="catalog-section__filter">
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterTshirts()">
+          <button class="catalog-section__filter-btn" id="t-shirt-btn" type="button">
             T-shirts
           </button>
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterJackets()">
-            Jackets
-          </button>
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterJeans()">
-            Jeans
-          </button>
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterSkirts()">
-            Skirts
-          </button>
-          <button class="catalog-section__filter-btn" type="button" onclick="FilterAll()">
-            All
-          </button>
+          <button class="catalog-section__filter-btn" id="jacket-btn" type="button">Jackets</button>
+          <button class="catalog-section__filter-btn" id="jeans-btn" type="button">Jeans</button>
+          <button class="catalog-section__filter-btn" id="skirt-btn" type="button">Skirts</button>
+          <button class="catalog-section__filter-btn" id="all-btn" type="button">All</button>
         </div>
         <ul class="catalog" id="catalog"></ul>
       </section>
@@ -59,6 +51,8 @@
       <p class="footer-text">Developed by Alexander Rostyagai</p>
     </footer>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/goods.js" type="module"></script>
+    <script src="./js/scroll-reveal.js" type="module"></script>
   </body>
 </html>

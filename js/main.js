@@ -1,647 +1,12 @@
-let goods = [
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-  {
-    name: "Skirt",
-    size: "XS",
-    price: 300,
-    color: "red",
-    img: "./images/skirt.jpg",
-  },
-  {
-    name: "T-shirt",
-    size: "M",
-    price: 100,
-    color: "white",
-    img: "./images/tshirt.jpg",
-  },
-  {
-    name: "Jeans",
-    size: "S",
-    price: 400,
-    color: "grey",
-    img: "./images/jeans.jpg",
-  },
-  {
-    name: "Jacket",
-    size: "L",
-    price: 250,
-    color: "black",
-    img: "./images/jacket.jpg",
-  },
-];
+import goods from "./goods.js";
+import scroll from "./scroll-reveal.js";
 
+console.log(goods);
+console.log(typeof goods);
 function shuffle(array) {
   let currentIndex = array.length,
     randomIndex;
-  
+
   while (currentIndex > 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
@@ -655,6 +20,12 @@ function shuffle(array) {
 shuffle(goods);
 
 const catalog = document.getElementById("catalog");
+
+const tshirtBtn = document.getElementById("t-shirt-btn");
+const jacketBtn = document.getElementById("jacket-btn");
+const jeansBtn = document.getElementById("jeans-btn");
+const skirtBtn = document.getElementById("skirt-btn");
+const allBtn = document.getElementById("all-btn");
 // for (item of goods) {
 //   const itemElement = document.createElement("li");
 
@@ -673,9 +44,9 @@ const catalog = document.getElementById("catalog");
 // }
 
 const FilterTshirts = () => {
-  tShirts = goods.filter((item) => item.name === "T-shirt");
+  let tShirts = goods.filter((item) => item.name === "T-shirt");
   let items = "";
-  for (item of tShirts) {
+  for (let item of tShirts) {
     items += `<li class='catalog__item'>
     <img src="${item.img}">
     <div class='catalog__container'>
@@ -691,13 +62,13 @@ const FilterTshirts = () => {
     <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   catalog.innerHTML = items;
-  ScrollReveal().reveal("li");
+  scroll.reveal("li");
 };
 
 const FilterJackets = () => {
-  jackets = goods.filter((item) => item.name === "Jacket");
+  let jackets = goods.filter((item) => item.name === "Jacket");
   let items = "";
-  for (item of jackets) {
+  for (let item of jackets) {
     items += `<li class='catalog__item'>
     <img src="${item.img}">
     <div class='catalog__container'>
@@ -713,11 +84,11 @@ const FilterJackets = () => {
     <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   catalog.innerHTML = items;
-  ScrollReveal().reveal("li");
+  scroll.reveal("li");
 };
 const FilterAll = () => {
   let items = "";
-  for (item of goods) {
+  for (let item of goods) {
     items += `<li class='catalog__item'>
     <img src="${item.img}">
     <div class='catalog__container'>
@@ -734,13 +105,13 @@ const FilterAll = () => {
   }
   shuffle(goods);
   catalog.innerHTML = items;
-  ScrollReveal().reveal("li");
+  scroll.reveal("li");
 };
 
 const FilterJeans = () => {
-  jeans = goods.filter((item) => item.name === "Jeans");
+  let jeans = goods.filter((item) => item.name === "Jeans");
   let items = "";
-  for (item of jeans) {
+  for (let item of jeans) {
     items += `<li class='catalog__item'>
     <img src="${item.img}">
     <div class='catalog__container'>
@@ -756,13 +127,13 @@ const FilterJeans = () => {
     <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   catalog.innerHTML = items;
-  ScrollReveal().reveal("li");
+  scroll.reveal("li");
 };
 
 const FilterSkirts = () => {
-  skirts = goods.filter((item) => item.name === "Skirt");
+  let skirts = goods.filter((item) => item.name === "Skirt");
   let items = "";
-  for (item of skirts) {
+  for (let item of skirts) {
     items += `<li class='catalog__item'>
     <img src="${item.img}">
     <div class='catalog__container'>
@@ -778,18 +149,13 @@ const FilterSkirts = () => {
     <button class="catalog__item-btn">Add to cart</button></li>`;
   }
   catalog.innerHTML = items;
-  ScrollReveal().reveal("li");
+  scroll.reveal("li");
 };
 
-ScrollReveal({
-  delay: 150,
-  duration: 1500,
-  distance: "100px",
-  rotate: {
-    x: 0,
-    y: 60,
-    z: 0,
-  },
-});
-
 FilterAll();
+
+tshirtBtn.addEventListener("click", FilterTshirts);
+jacketBtn.addEventListener("click", FilterJackets);
+jeansBtn.addEventListener("click", FilterJeans);
+skirtBtn.addEventListener("click", FilterSkirts);
+allBtn.addEventListener("click", FilterAll);
