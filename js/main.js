@@ -29,6 +29,8 @@ const openCartBtn = document.getElementById("open-cart-btn");
 const closeCartBtn = document.getElementById("close-cart-btn");
 const cartModal = document.getElementById("cart-modal");
 const cart = document.getElementById("cart-list");
+const orderSummaryText = document.getElementById("order-summary");
+let orderSummary = 0;
 let addToCartBtn = document.querySelectorAll("catalog__item-btn");
 // for (item of goods) {
 //   const itemElement = document.createElement("li");
@@ -52,7 +54,7 @@ function AddToCart(id) {
   let curItem = goods.filter((item) => item.id == id);
   const [object] = curItem;
   cart.innerHTML += `
-    <li class="cart__item">
+    <li class="cart__item" price='${object.price}'>
       <img class="cart__item-img" src="${object.img}" alt="#" />
       <div class="cart__item-descr">
           <div class="cart__item-textbox">
@@ -66,9 +68,13 @@ function AddToCart(id) {
         </div>
         </li> `;
   let delItemBtns = document.querySelectorAll(".cart__item-remove-btn");
+  orderSummary += object.price;
+  orderSummaryText.textContent = "Order summary: " + orderSummary;
   delItemBtns.forEach((btn) =>
     btn.addEventListener("click", () => {
       btn.parentElement.parentElement.classList.add("cart__item--hidden");
+      orderSummary = orderSummary - btn.parentElement.parentElement.getAttribute("price");
+      orderSummaryText.textContent = "Order summary: " + orderSummary;
       setTimeout(() => {
         btn.parentElement.parentElement.remove();
       }, 350);

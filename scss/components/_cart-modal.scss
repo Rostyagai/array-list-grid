@@ -10,7 +10,7 @@
   top: 0;
   z-index: 1000;
   background-color: #fff;
-  transition: right 1s, left 1s, top 1s, bottom 1s;
+  transition: transform 1s;
   &__container {
     position: relative;
     width: 100%;
@@ -28,7 +28,8 @@
     font-size: 32px;
   }
   &--hidden {
-    right: -100%;
+    // right: -100%;
+    transform: translateX(100%);
     // left: auto;
     // bottom: auto;
     // top: none;
