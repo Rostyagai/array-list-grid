@@ -26,12 +26,21 @@
     <header class="header">
       <div class="header__container">
         <a class="header__logo" href="index.html">RAZA clo.</a>
-        <button class="header__cart-btn" type="button">
+        <button class="header__cart-btn" id="open-cart-btn" type="button">
           <i class="ri-shopping-cart-2-line"></i>
         </button>
       </div>
     </header>
     <!-- #endregion -->
+
+    <div class="cart-modal cart-modal--hidden" id="cart-modal">
+      <div class="cart-modal__container">
+        <button class="cart-modal__close-btn" id="close-cart-btn">
+          <i class="ri-close-circle-line"></i>
+        </button>
+        <ul class="cart" id="cart-list"></ul>
+      </div>
+    </div>
     <main>
       <section class="catalog-section">
         <h1 class="catalog-section__title">Browse our catalog</h1>
@@ -51,8 +60,8 @@
       <p class="footer-text">Developed by Alexander Rostyagai</p>
     </footer>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
     <script src="./js/goods.js" type="module"></script>
     <script src="./js/scroll-reveal.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>

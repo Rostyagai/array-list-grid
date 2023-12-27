@@ -14,7 +14,7 @@
 
     width: 250px;
     padding: 0 0 2rem 0;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
 
     background-color: #fff;
     text-align: left;
@@ -24,7 +24,7 @@
     transition: transform 0.3s;
   }
   &__item:hover {
-    transform: scale(1.1);
+    transform: scale(1.025);
   }
   &__item-btn {
     background-color: #11b4f5;
@@ -51,7 +51,6 @@
     margin-bottom: 1rem;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .catalog__item {
