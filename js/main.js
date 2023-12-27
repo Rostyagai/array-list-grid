@@ -71,7 +71,7 @@ function AddToCart(id) {
       btn.parentElement.parentElement.classList.add("cart__item--hidden");
       setTimeout(() => {
         btn.parentElement.parentElement.remove();
-      }, 600);
+      }, 350);
     })
   );
 }
