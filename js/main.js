@@ -60,7 +60,7 @@ function AddToCart(id) {
           <div class="cart__item-textbox">
             <p>${object.name}</p>
             <p class="cart__item-specs">${object.color}, ${object.size}</p>
-            <p class="cart__item-price">${object.price}</p>
+            <p class="cart__item-price">${object.price} <span>&#8372;</span></p>
           </div>
         <button class="cart__item-remove-btn">
         <i class="ri-close-line"></i>
@@ -69,12 +69,12 @@ function AddToCart(id) {
         </li> `;
   let delItemBtns = document.querySelectorAll(".cart__item-remove-btn");
   orderSummary += object.price;
-  orderSummaryText.textContent = "Order summary: " + orderSummary;
+  orderSummaryText.innerHTML = "Order summary: " + orderSummary + " <span>&#8372;</span>";
   delItemBtns.forEach((btn) =>
     btn.addEventListener("click", () => {
       btn.parentElement.parentElement.classList.add("cart__item--hidden");
       orderSummary = orderSummary - btn.parentElement.parentElement.getAttribute("price");
-      orderSummaryText.textContent = "Order summary: " + orderSummary;
+      orderSummaryText.innerHTML = "Order summary: " + orderSummary + " <span>&#8372;</span>";
       setTimeout(() => {
         btn.parentElement.parentElement.remove();
       }, 350);
@@ -82,7 +82,7 @@ function AddToCart(id) {
   );
 }
 const FilterTshirts = () => {
-  let tShirts = goods.filter((item) => item.name === "T-shirt");
+  let tShirts = goods.filter((item) => item.category === "t-shirt");
   let items = "";
   for (let item of tShirts) {
     items += `<li class='catalog__item'>
@@ -94,7 +94,7 @@ const FilterTshirts = () => {
       <p>${item.color}</p>
     </div>
 
-    <p>${item.price}</p>
+    <p>${item.price} <span>&#8372;</span></p>
     </div>
     
     <button class="catalog__item-btn" id='${item.id}'>Add to cart</button></li>`;
@@ -110,7 +110,7 @@ const FilterTshirts = () => {
 };
 
 const FilterJackets = () => {
-  let jackets = goods.filter((item) => item.name === "Jacket");
+  let jackets = goods.filter((item) => item.category === "jacket");
   let items = "";
   for (let item of jackets) {
     items += `<li class='catalog__item'>
@@ -122,7 +122,7 @@ const FilterJackets = () => {
       <p>${item.color}</p>
     </div>
 
-    <p>${item.price}</p>
+    <p>${item.price} <span>&#8372;</span></p>
     </div>
     
     <button class="catalog__item-btn" id='${item.id}'>Add to cart</button></li>`;
@@ -148,7 +148,7 @@ const FilterAll = () => {
       <p>${item.color}</p>
     </div>
 
-    <p>${item.price}</p>
+    <p>${item.price} <span>&#8372;</span></p>
     </div>
     
     <button class="catalog__item-btn" id='${item.id}'>Add to cart</button></li>`;
@@ -177,7 +177,7 @@ const FilterJeans = () => {
       <p>${item.color}</p>
     </div>
 
-    <p>${item.price}</p>
+    <p>${item.price} <span>&#8372;</span></p>
     </div>
     
     <button class="catalog__item-btn" id='${item.id}'>Add to cart</button></li>`;
@@ -205,7 +205,7 @@ const FilterSkirts = () => {
       <p>${item.color}</p>
     </div>
 
-    <p>${item.price}</p>
+    <p>${item.price} <span>&#8372;</span></p>
     </div>
     
     <button class="catalog__item-btn" id='${item.id}'>Add to cart</button></li>`;
@@ -213,7 +213,6 @@ const FilterSkirts = () => {
   catalog.innerHTML = items;
   scroll.reveal(".catalog__item");
   addToCartBtn = document.querySelectorAll(".catalog__item-btn");
-  console.log(addToCartBtn);
   addToCartBtn.forEach((i) => {
     i.addEventListener("click", () => {
       console.log("bb");

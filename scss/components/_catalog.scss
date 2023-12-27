@@ -26,6 +26,9 @@
   &__item:hover {
     transform: scale(1.025);
   }
+  &__item:active{
+    transform: scale(0.9);
+  }
   &__item-btn {
     background-color: #11b4f5;
     color: #fff;
