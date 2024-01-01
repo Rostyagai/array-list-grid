@@ -4,25 +4,32 @@ import shuffle from "./shuffle-array.js";
 
 shuffle(goods);
 
+// Catalog ul DOM-Object
 const catalog = document.getElementById("catalog");
 
+// Filter buttons DOM-Objects
 const tshirtBtn = document.getElementById("t-shirt-btn");
 const jacketBtn = document.getElementById("jacket-btn");
 const jeansBtn = document.getElementById("jeans-btn");
 const skirtBtn = document.getElementById("skirt-btn");
 const allBtn = document.getElementById("all-btn");
 
-const openCartBtn = document.getElementById("open-cart-btn");
-const closeCartBtn = document.getElementById("close-cart-btn");
+// Cart
 const cartModal = document.getElementById("cart-modal");
 const cart = document.getElementById("cart-list");
+
+// Order summary
 const orderSummaryText = document.getElementById("order-summary");
 let orderSummary = 0;
+
+// Cart buttons
+const openCartBtn = document.getElementById("open-cart-btn");
+const closeCartBtn = document.getElementById("close-cart-btn");
 let addToCartBtn = document.querySelectorAll("catalog__item-btn");
 
 function AddToCart(id) {
-  console.log("executed");
   let curItem = goods.filter((item) => item.id == id);
+
   const [object] = curItem;
   cart.innerHTML += `
     <li class="cart__item" price='${object.price}'>
@@ -38,20 +45,28 @@ function AddToCart(id) {
         </button>
         </div>
         </li> `;
+
   let delItemBtns = document.querySelectorAll(".cart__item-remove-btn");
-  orderSummary += object.price;
+
+  // Change summary
+  orderSummary += object.price; // -> Summary addition on adding item
   orderSummaryText.innerHTML = "Order summary: " + orderSummary + " <span>&#8372;</span>";
+
   delItemBtns.forEach((btn) =>
     btn.addEventListener("click", () => {
-      btn.parentElement.parentElement.classList.add("cart__item--hidden");
+      btn.parentElement.parentElement.classList.add("cart__item--hidden"); // -> Add hidden modificato
+
+      // Summary substraction
       orderSummary = orderSummary - btn.parentElement.parentElement.getAttribute("price");
       orderSummaryText.innerHTML = "Order summary: " + orderSummary + " <span>&#8372;</span>";
+
       setTimeout(() => {
         btn.parentElement.parentElement.remove();
       }, 350);
     })
   );
 }
+
 const FilterTshirts = () => {
   let tShirts = goods.filter((item) => item.category === "t-shirt");
   let items = "";
@@ -198,6 +213,7 @@ const ToggleCart = () => {
 
 FilterAll();
 
+// Add event-listeners to buttons
 tshirtBtn.addEventListener("click", FilterTshirts);
 jacketBtn.addEventListener("click", FilterJackets);
 jeansBtn.addEventListener("click", FilterJeans);
