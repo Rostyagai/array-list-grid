@@ -1,19 +1,6 @@
 import goods from "./goods.js";
 import scroll from "./scroll-reveal.js";
-
-function shuffle(array) {
-  let currentIndex = array.length,
-    randomIndex;
-
-  while (currentIndex > 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-  }
-
-  return array;
-}
+import shuffle from "./shuffle-array.js";
 
 shuffle(goods);
 
@@ -32,22 +19,6 @@ const cart = document.getElementById("cart-list");
 const orderSummaryText = document.getElementById("order-summary");
 let orderSummary = 0;
 let addToCartBtn = document.querySelectorAll("catalog__item-btn");
-// for (item of goods) {
-//   const itemElement = document.createElement("li");
-
-//   const name = document.createElement("p");
-//   const size = document.createElement("p");
-//   const price = document.createElement("p");
-//   const color = document.createElement("p");
-
-//   name.innerText = item.name;
-//   size.innerText = item.size;
-//   price.innerText = item.price;
-//   color.innerText = item.color;
-
-//   itemElement.append(name, size, price, color);
-//   catalog.appendChild(itemElement);
-// }
 
 function AddToCart(id) {
   console.log("executed");
@@ -235,3 +206,20 @@ allBtn.addEventListener("click", FilterAll);
 
 openCartBtn.addEventListener("click", ToggleCart);
 closeCartBtn.addEventListener("click", ToggleCart);
+
+// for (item of goods) {
+//   const itemElement = document.createElement("li");
+
+//   const name = document.createElement("p");
+//   const size = document.createElement("p");
+//   const price = document.createElement("p");
+//   const color = document.createElement("p");
+
+//   name.innerText = item.name;
+//   size.innerText = item.size;
+//   price.innerText = item.price;
+//   color.innerText = item.color;
+
+//   itemElement.append(name, size, price, color);
+//   catalog.appendChild(itemElement);
+// }
